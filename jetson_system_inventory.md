@@ -19,4 +19,6 @@
 - Isaac 路径搜索: [outputs/isaac_paths.txt](outputs/isaac_paths.txt)
 - 模型文件清单（全局扫描）: [outputs/models_list.txt](outputs/models_list.txt)
 
+- Cameras: see [cameras.md](cameras.md)
+
 请参阅下列分节文档了解每个部分的详细整理与结论。
