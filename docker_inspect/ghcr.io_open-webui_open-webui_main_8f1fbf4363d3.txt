@@ -1,0 +1,414 @@
+--- ghcr.io/open-webui/open-webui:main (8f1fbf4363d3) ---
+{"org.opencontainers.image.created":"2025-01-10T19:47:08.508Z","org.opencontainers.image.description":"User-friendly AI Interface (Supports Ollama, OpenAI API, ...)","org.opencontainers.image.licenses":"BSD-3-Clause","org.opencontainers.image.revision":"4269df041fef62208d59babe0faae866d2bfbc3c","org.opencontainers.image.source":"https://github.com/open-webui/open-webui","org.opencontainers.image.title":"open-webui","org.opencontainers.image.url":"https://github.com/open-webui/open-webui","org.opencontainers.image.version":"main"}
+--- /etc/os-release ---
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+--- dpkg -l (head) ---
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                        Version                        Architecture Description
++++-===========================-==============================-============-================================================================================
+ii  adduser                     3.134                          all          add and remove users and groups
+ii  apt                         2.6.1                          arm64        commandline package manager
+ii  base-files                  12.4+deb12u8                   arm64        Debian base system miscellaneous files
+ii  base-passwd                 3.6.1                          arm64        Debian base system master password and group files
+ii  bash                        5.2.15-2+b7                    arm64        GNU Bourne Again SHell
+ii  binutils                    2.40-2                         arm64        GNU assembler, linker and binary utilities
+ii  binutils-aarch64-linux-gnu  2.40-2                         arm64        GNU binary utilities, for aarch64-linux-gnu target
+ii  binutils-common:arm64       2.40-2                         arm64        Common files for the GNU assembler, linker and binary utilities
+ii  bsdutils                    1:2.38.1-5+deb12u2             arm64        basic utilities from 4.4BSD-Lite
+ii  build-essential             12.9                           arm64        Informational list of build-essential packages
+ii  bzip2                       1.0.8-5+b1                     arm64        high-quality block-sorting file compressor - utilities
+ii  ca-certificates             20230311                       all          Common CA certificates
+ii  coreutils                   9.1-1                          arm64        GNU core utilities
+ii  cpp                         4:12.2.0-3                     arm64        GNU C preprocessor (cpp)
+ii  cpp-12                      12.2.0-14                      arm64        GNU C preprocessor
+ii  curl                        7.88.1-10+deb12u8              arm64        command line tool for transferring data with URL syntax
+ii  dash                        0.5.12-2                       arm64        POSIX-compliant shell
+ii  debconf                     1.5.82                         all          Debian configuration management system
+ii  debian-archive-keyring      2023.3+deb12u1                 all          GnuPG archive keys of the Debian archive
+ii  debianutils                 5.7-0.5~deb12u1                arm64        Miscellaneous utilities specific to Debian
+ii  diffutils                   1:3.8-4                        arm64        File comparison utilities
+ii  dpkg                        1.21.22                        arm64        Debian package management system
+ii  dpkg-dev                    1.21.22                        all          Debian package development tools
+ii  e2fsprogs                   1.47.0-2                       arm64        ext2/ext3/ext4 file system utilities
+ii  ffmpeg                      7:5.1.6-0+deb12u1              arm64        Tools for transcoding, streaming and playing of multimedia files
+ii  findutils                   4.9.0-4                        arm64        utilities for finding files--find, xargs
+ii  fontconfig                  2.14.1-4                       arm64        generic font configuration library - support binaries
+ii  fontconfig-config           2.14.1-4                       arm64        generic font configuration library - configuration
+ii  fonts-dejavu-core           2.37-6                         all          Vera font family derivate with additional characters
+ii  g++                         4:12.2.0-3                     arm64        GNU C++ compiler
+ii  g++-12                      12.2.0-14                      arm64        GNU C++ compiler
+ii  gcc                         4:12.2.0-3                     arm64        GNU C compiler
+ii  gcc-12                      12.2.0-14                      arm64        GNU C compiler
+ii  gcc-12-base:arm64           12.2.0-14                      arm64        GCC, the GNU Compiler Collection (base package)
+ii  git                         1:2.39.5-0+deb12u1             arm64        fast, scalable, distributed revision control system
+ii  git-man                     1:2.39.5-0+deb12u1             all          fast, scalable, distributed revision control system (manual pages)
+ii  gpgv                        2.2.40-1.1                     arm64        GNU privacy guard - signature verification tool
+ii  grep                        3.8-5                          arm64        GNU grep, egrep and fgrep
+ii  gzip                        1.12-1                         arm64        GNU compression utilities
+ii  hostname                    3.23+nmu1                      arm64        utility to set/show the host name or domain name
+ii  init-system-helpers         1.65.2                         all          helper tools for all init systems
+ii  jq                          1.6-2.1                        arm64        lightweight and flexible command-line JSON processor
+ii  libacl1:arm64               2.3.1-3                        arm64        access control list - shared library
+ii  libaom3:arm64               3.6.0-1+deb12u1                arm64        AV1 Video Codec Library
+ii  libapt-pkg6.0:arm64         2.6.1                          arm64        package management runtime library
+ii  libasan8:arm64              12.2.0-14                      arm64        AddressSanitizer -- a fast memory error detector
+ii  libasound2:arm64            1.2.8-1+b1                     arm64        shared library for ALSA applications
+ii  libasound2-data             1.2.8-1                        all          Configuration files and profiles for ALSA drivers
+ii  libass9:arm64               1:0.17.1-1                     arm64        library for SSA/ASS subtitles rendering
+ii  libasyncns0:arm64           0.8-6+b3                       arm64        Asynchronous name service query library
+ii  libatomic1:arm64            12.2.0-14                      arm64        support library providing __atomic built-in functions
+ii  libattr1:arm64              1:2.5.1-4                      arm64        extended attribute handling - shared library
+ii  libaudit-common             1:3.0.9-1                      all          Dynamic library for security auditing - common files
+ii  libaudit1:arm64             1:3.0.9-1                      arm64        Dynamic library for security auditing
+ii  libavc1394-0:arm64          0.5.4-5                        arm64        control IEEE 1394 audio/video devices
+ii  libavcodec59:arm64          7:5.1.6-0+deb12u1              arm64        FFmpeg library with de/encoders for audio/video codecs - runtime files
+ii  libavdevice59:arm64         7:5.1.6-0+deb12u1              arm64        FFmpeg library for handling input and output devices - runtime files
+ii  libavfilter8:arm64          7:5.1.6-0+deb12u1              arm64        FFmpeg library containing media filters - runtime files
+ii  libavformat59:arm64         7:5.1.6-0+deb12u1              arm64        FFmpeg library with (de)muxers for multimedia containers - runtime files
+ii  libavutil57:arm64           7:5.1.6-0+deb12u1              arm64        FFmpeg library with functions for simplifying programming - runtime files
+ii  libbinutils:arm64           2.40-2                         arm64        GNU binary utilities (private shared library)
+ii  libblas3:arm64              3.11.0-2                       arm64        Basic Linear Algebra Reference implementations, shared library
+ii  libblkid1:arm64             2.38.1-5+deb12u2               arm64        block device ID library
+ii  libbluray2:arm64            1:1.3.4-1                      arm64        Blu-ray disc playback support library (shared library)
+ii  libbrotli1:arm64            1.0.9-2+b6                     arm64        library implementing brotli encoder and decoder (shared libraries)
+ii  libbs2b0:arm64              3.1.0+dfsg-7                   arm64        Bauer stereophonic-to-binaural DSP library
+ii  libbsd0:arm64               0.11.7-2                       arm64        utility functions from BSD systems - shared library
+ii  libbz2-1.0:arm64            1.0.8-5+b1                     arm64        high-quality block-sorting file compressor library - runtime
+ii  libc-bin                    2.36-9+deb12u9                 arm64        GNU C Library: Binaries
+ii  libc-dev-bin                2.36-9+deb12u9                 arm64        GNU C Library: Development binaries
+ii  libc6:arm64                 2.36-9+deb12u9                 arm64        GNU C Library: Shared libraries
+ii  libc6-dev:arm64             2.36-9+deb12u9                 arm64        GNU C Library: Development Libraries and Header Files
+ii  libcaca0:arm64              0.99.beta20-3                  arm64        colour ASCII art library
+ii  libcairo-gobject2:arm64     1.16.0-7                       arm64        Cairo 2D vector graphics library (GObject library)
+ii  libcairo2:arm64             1.16.0-7                       arm64        Cairo 2D vector graphics library
+ii  libcap-ng0:arm64            0.8.3-1+b3                     arm64        alternate POSIX capabilities library
+ii  libcap2:arm64               1:2.66-4                       arm64        POSIX 1003.1e capabilities (library)
+ii  libcc1-0:arm64              12.2.0-14                      arm64        GCC cc1 plugin for GDB
+ii  libcdio-cdda2:arm64         10.2+2.0.1-1                   arm64        library to read and control digital audio CDs
+ii  libcdio-paranoia2:arm64     10.2+2.0.1-1                   arm64        library to read digital audio CDs with error correction
+ii  libcdio19:arm64             2.1.0-4                        arm64        library to read and control CD-ROM
+ii  libchromaprint1:arm64       1.5.1-2+b1                     arm64        audio fingerprint library
+ii  libcjson1:arm64             1.7.15-1+deb12u2               arm64        Ultralightweight JSON parser in ANSI C
+ii  libcodec2-1.0:arm64         1.0.5-1                        arm64        Codec2 runtime library
+ii  libcom-err2:arm64           1.47.0-2                       arm64        common error description library
+ii  libcrypt-dev:arm64          1:4.4.33-2                     arm64        libcrypt development files
+ii  libcrypt1:arm64             1:4.4.33-2                     arm64        libcrypt shared library
+ii  libctf-nobfd0:arm64         2.40-2                         arm64        Compact C Type Format library (runtime, no BFD dependency)
+ii  libctf0:arm64               2.40-2                         arm64        Compact C Type Format library (runtime, BFD dependency)
+ii  libcurl3-gnutls:arm64       7.88.1-10+deb12u8              arm64        easy-to-use client-side URL transfer library (GnuTLS flavour)
+ii  libcurl4:arm64              7.88.1-10+deb12u8              arm64        easy-to-use client-side URL transfer library (OpenSSL flavour)
+ii  libdatrie1:arm64            0.2.13-2+b1                    arm64        Double-array trie library
+ii  libdav1d6:arm64             1.0.0-2+deb12u1                arm64        fast and small AV1 video stream decoder (shared library)
+ii  libdb5.3:arm64              5.3.28+dfsg2-1                 arm64        Berkeley v5.3 Database Libraries [runtime]
+ii  libdbus-1-3:arm64           1.14.10-1~deb12u1              arm64        simple interprocess messaging system (library)
+ii  libdc1394-25:arm64          2.2.6-4                        arm64        high level programming interface for IEEE 1394 digital cameras
+ii  libdebconfclient0:arm64     0.270                          arm64        Debian Configuration Management System (C-implementation library)
+ii  libdecor-0-0:arm64          0.1.1-2                        arm64        client-side window decoration library
+ii  libdeflate0:arm64           1.14-1                         arm64        fast, whole-buffer DEFLATE-based compression and decompression
+ii  libdpkg-perl                1.21.22                        all          Dpkg perl modules
+ii  libdrm-amdgpu1:arm64        2.4.114-1+b1                   arm64        Userspace interface to amdgpu-specific kernel DRM services -- runtime
+ii  libdrm-common               2.4.114-1                      all          Userspace interface to kernel DRM services -- common files
+ii  libdrm-nouveau2:arm64       2.4.114-1+b1                   arm64        Userspace interface to nouveau-specific kernel DRM services -- runtime
+ii  libdrm-radeon1:arm64        2.4.114-1+b1                   arm64        Userspace interface to radeon-specific kernel DRM services -- runtime
+ii  libdrm2:arm64               2.4.114-1+b1                   arm64        Userspace interface to kernel DRM services -- runtime
+ii  libedit2:arm64              3.1-20221030-2                 arm64        BSD editline and history libraries
+ii  libelf1:arm64               0.188-2.1                      arm64        library to read and write ELF files
+ii  libepoxy0:arm64             1.5.10-1                       arm64        OpenGL function pointer management library
+ii  liberror-perl               0.17029-2                      all          Perl module for error/exception handling in an OO-ish way
+ii  libexpat1:arm64             2.5.0-1+deb12u1                arm64        XML parsing C library - runtime library
+ii  libexpat1-dev:arm64         2.5.0-1+deb12u1                arm64        XML parsing C library - development kit
+ii  libext2fs2:arm64            1.47.0-2                       arm64        ext2/ext3/ext4 file system libraries
+ii  libffi8:arm64               3.4.4-1                        arm64        Foreign Function Interface library runtime
+ii  libflac12:arm64             1.4.2+ds-2                     arm64        Free Lossless Audio Codec - runtime C library
+ii  libflite1:arm64             2.2-5                          arm64        Small run-time speech synthesis engine - shared libraries
+ii  libfontconfig1:arm64        2.14.1-4                       arm64        generic font configuration library - runtime
+ii  libfreetype6:arm64          2.12.1+dfsg-5+deb12u3          arm64        FreeType 2 font engine, shared library files
+ii  libfribidi0:arm64           1.0.8-2.1                      arm64        Free Implementation of the Unicode BiDi algorithm
+ii  libgbm1:arm64               22.3.6-1+deb12u1               arm64        generic buffer management API -- runtime
+ii  libgcc-12-dev:arm64         12.2.0-14                      arm64        GCC support library (development files)
+ii  libgcc-s1:arm64             12.2.0-14                      arm64        GCC support library
+ii  libgcrypt20:arm64           1.10.1-3                       arm64        LGPL Crypto library - runtime library
+ii  libgdbm-compat4:arm64       1.23-3                         arm64        GNU dbm database routines (legacy support runtime version) 
+ii  libgdbm6:arm64              1.23-3                         arm64        GNU dbm database routines (runtime version) 
+ii  libgdk-pixbuf-2.0-0:arm64   2.42.10+dfsg-1+deb12u1         arm64        GDK Pixbuf library
+ii  libgdk-pixbuf2.0-common     2.42.10+dfsg-1+deb12u1         all          GDK Pixbuf library - data files
+ii  libgfortran5:arm64          12.2.0-14                      arm64        Runtime library for GNU Fortran applications
+ii  libgl1:arm64                1.6.0-1                        arm64        Vendor neutral GL dispatch library -- legacy GL support
+ii  libgl1-mesa-dri:arm64       22.3.6-1+deb12u1               arm64        free implementation of the OpenGL API -- DRI modules
+ii  libglapi-mesa:arm64         22.3.6-1+deb12u1               arm64        free implementation of the GL API -- shared library
+ii  libglib2.0-0:arm64          2.74.6-2+deb12u4               arm64        GLib library of C routines
+ii  libglvnd0:arm64             1.6.0-1                        arm64        Vendor neutral GL dispatch library
+ii  libglx-mesa0:arm64          22.3.6-1+deb12u1               arm64        free implementation of the OpenGL API -- GLX vendor library
+ii  libglx0:arm64               1.6.0-1                        arm64        Vendor neutral GL dispatch library -- GLX support
+ii  libgme0:arm64               0.6.3-6                        arm64        Playback library for video game music files - shared library
+ii  libgmp10:arm64              2:6.2.1+dfsg1-1.1              arm64        Multiprecision arithmetic library
+ii  libgnutls30:arm64           3.7.9-2+deb12u3                arm64        GNU TLS library - main runtime library
+ii  libgomp1:arm64              12.2.0-14                      arm64        GCC OpenMP (GOMP) support library
+ii  libgpg-error0:arm64         1.46-1                         arm64        GnuPG development runtime library
+ii  libgprofng0:arm64           2.40-2                         arm64        GNU Next Generation profiler (runtime library)
+ii  libgraphite2-3:arm64        1.3.14-1                       arm64        Font rendering engine for Complex Scripts -- library
+ii  libgsm1:arm64               1.0.22-1                       arm64        Shared libraries for GSM speech compressor
+ii  libgssapi-krb5-2:arm64      1.20.1-2+deb12u2               arm64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ii  libharfbuzz0b:arm64         6.0.0+dfsg-3                   arm64        OpenType text shaping engine (shared library)
+ii  libhogweed6:arm64           3.8.1-2                        arm64        low level cryptographic library (public-key cryptos)
+ii  libhwasan0:arm64            12.2.0-14                      arm64        AddressSanitizer -- a fast memory error detector
+ii  libhwy1:arm64               1.0.3-3+deb12u1                arm64        Efficient and performance-portable SIMD wrapper (runtime files)
+ii  libice6:arm64               2:1.0.10-1                     arm64        X11 Inter-Client Exchange library
+ii  libicu72:arm64              72.1-3                         arm64        International Components for Unicode
+ii  libidn2-0:arm64             2.3.3-1+b1                     arm64        Internationalized domain names (IDNA2008/TR46) library
+ii  libiec61883-0:arm64         1.2.0-6+b1                     arm64        partial implementation of IEC 61883 (shared lib)
+ii  libisl23:arm64              0.25-1.1                       arm64        manipulating sets and relations of integer points bounded by linear constraints
+ii  libitm1:arm64               12.2.0-14                      arm64        GNU Transactional Memory Library
+ii  libjack-jackd2-0:arm64      1.9.21~dfsg-3                  arm64        JACK Audio Connection Kit (libraries)
+ii  libjansson4:arm64           2.14-2                         arm64        C library for encoding, decoding and manipulating JSON data
+ii  libjbig0:arm64              2.1-6.1                        arm64        JBIGkit libraries
+ii  libjpeg62-turbo:arm64       1:2.1.5-2                      arm64        libjpeg-turbo JPEG runtime library
+ii  libjq1:arm64                1.6-2.1                        arm64        lightweight and flexible command-line JSON processor - shared library
+ii  libjs-jquery                3.6.1+dfsg+~3.5.14-1           all          JavaScript library for dynamic web applications
+ii  libjs-sphinxdoc             5.3.0-4                        all          JavaScript support for Sphinx documentation
+ii  libjs-underscore            1.13.4~dfsg+~1.11.4-3          all          JavaScript's functional programming helper library
+ii  libjxl0.7:arm64             0.7.0-10                       arm64        JPEG XL Image Coding System - "JXL" (shared libraries)
+ii  libk5crypto3:arm64          1.20.1-2+deb12u2               arm64        MIT Kerberos runtime libraries - Crypto Library
+ii  libkeyutils1:arm64          1.6.3-2                        arm64        Linux Key Management Utilities (library)
+ii  libkrb5-3:arm64             1.20.1-2+deb12u2               arm64        MIT Kerberos runtime libraries
+ii  libkrb5support0:arm64       1.20.1-2+deb12u2               arm64        MIT Kerberos runtime libraries - Support library
+ii  liblapack3:arm64            3.11.0-2                       arm64        Library of linear algebra routines 3 - shared version
+ii  liblcms2-2:arm64            2.14-2                         arm64        Little CMS 2 color management library
+ii  libldap-2.5-0:arm64         2.5.13+dfsg-5                  arm64        OpenLDAP libraries
+ii  liblerc4:arm64              4.0.0+ds-2                     arm64        Limited Error Raster Compression library
+ii  liblilv-0-0:arm64           0.24.14-1                      arm64        library for simple use of LV2 plugins
+ii  libllvm15:arm64             1:15.0.6-4+b1                  arm64        Modular compiler and toolchain technologies, runtime library
+ii  liblsan0:arm64              12.2.0-14                      arm64        LeakSanitizer -- a memory leak detector (runtime)
+ii  liblua5.3-0:arm64           5.3.6-2                        arm64        Shared library for the Lua interpreter version 5.3
+ii  liblz4-1:arm64              1.9.4-1                        arm64        Fast LZ compression algorithm library - runtime
+ii  liblzma5:arm64              5.4.1-0.2                      arm64        XZ-format compression library
+ii  libmbedcrypto7:arm64        2.28.3-1                       arm64        lightweight crypto and SSL/TLS library - crypto library
+ii  libmd0:arm64                1.0.4-2                        arm64        message digest functions from BSD systems - shared library
+ii  libmount1:arm64             2.38.1-5+deb12u2               arm64        device mounting library
+ii  libmp3lame0:arm64           3.100-6                        arm64        MP3 encoding library
+ii  libmpc3:arm64               1.3.1-1                        arm64        multiple precision complex floating-point library
+ii  libmpfr6:arm64              4.2.0-1                        arm64        multiple precision floating-point computation
+ii  libmpg123-0:arm64           1.31.2-1+deb12u1               arm64        MPEG layer 1/2/3 audio decoder (shared library)
+ii  libmysofa1:arm64            1.3.1~dfsg0-1                  arm64        library to read HRTFs stored in the AES69-2015 SOFA format
+ii  libncursesw6:arm64          6.4-4                          arm64        shared libraries for terminal handling (wide character support)
+ii  libnettle8:arm64            3.8.1-2                        arm64        low level cryptographic library (symmetric and one-way cryptos)
+ii  libnghttp2-14:arm64         1.52.0-1+deb12u2               arm64        library implementing HTTP/2 protocol (shared library)
+ii  libnorm1:arm64              1.5.9+dfsg-2                   arm64        NACK-Oriented Reliable Multicast (NORM) library
+ii  libnsl-dev:arm64            1.3.0-2                        arm64        libnsl development files
+ii  libnsl2:arm64               1.3.0-2                        arm64        Public client interface for NIS(YP) and NIS+
+ii  libnuma1:arm64              2.0.16-1                       arm64        Libraries for controlling NUMA policy
+ii  libogg0:arm64               1.3.5-3                        arm64        Ogg bitstream library
+ii  libonig5:arm64              6.9.8-1                        arm64        regular expressions library
+ii  libopenal-data              1:1.19.1-2                     all          Software implementation of the OpenAL audio API (data files)
+ii  libopenal1:arm64            1:1.19.1-2                     arm64        Software implementation of the OpenAL audio API (shared library)
+--- pip list (head) ---
+Package                                Version
+-------------------------------------- -----------
+aiocache                               0.12.3
+aiofiles                               24.1.0
+aiohappyeyeballs                       2.4.4
+aiohttp                                3.11.8
+aiosignal                              1.3.2
+alembic                                1.14.0
+annotated-types                        0.7.0
+anthropic                              0.42.0
+anyio                                  4.7.0
+APScheduler                            3.10.4
+argon2-cffi                            23.1.0
+argon2-cffi-bindings                   21.2.0
+asgiref                                3.8.1
+async-timeout                          5.0.1
+attrs                                  24.3.0
+Authlib                                1.3.2
+av                                     12.3.0
+backoff                                2.2.1
+bcrypt                                 4.2.0
+beautifulsoup4                         4.12.3
+bidict                                 0.23.1
+bitarray                               3.0.0
+black                                  24.8.0
+blinker                                1.9.0
+boto3                                  1.35.53
+botocore                               1.35.92
+build                                  1.2.2.post1
+cachetools                             5.5.0
+certifi                                2024.12.14
+cffi                                   1.17.1
+chardet                                5.2.0
+charset-normalizer                     3.4.1
+chroma-hnswlib                         0.7.6
+chromadb                               0.5.15
+click                                  8.1.8
+colbert-ai                             0.2.21
+colorclass                             2.2.2
+coloredlogs                            15.0.1
+compressed_rtf                         1.0.6
+cryptography                           44.0.0
+ctranslate2                            4.5.0
+dataclasses-json                       0.6.7
+datasets                               3.2.0
+defusedxml                             0.7.1
+Deprecated                             1.2.15
+dill                                   0.3.8
+distro                                 1.9.0
+dnspython                              2.7.0
+docker                                 7.1.0
+docx2txt                               0.8
+duckduckgo_search                      6.3.7
+durationpy                             0.9
+easygui                                0.98.3
+ebcdic                                 1.1.1
+ecdsa                                  0.19.0
+einops                                 0.8.0
+email_validator                        2.2.0
+emoji                                  2.14.0
+et_xmlfile                             2.0.0
+eval_type_backport                     0.2.2
+Events                                 0.5
+extract-msg                            0.52.0
+fake-useragent                         1.5.1
+fastapi                                0.111.0
+fastapi-cli                            0.0.7
+faster-whisper                         1.0.3
+filelock                               3.13.1
+filetype                               1.2.0
+Flask                                  3.1.0
+Flask-Cors                             5.0.0
+flatbuffers                            24.12.23
+fonttools                              4.55.3
+fpdf2                                  2.8.2
+frozenlist                             1.5.0
+fsspec                                 2024.2.0
+ftfy                                   6.2.3
+git-python                             1.0.3
+gitdb                                  4.0.12
+GitPython                              3.1.44
+google-ai-generativelanguage           0.6.6
+google-api-core                        2.24.0
+google-api-python-client               2.157.0
+google-auth                            2.37.0
+google-auth-httplib2                   0.2.0
+google-auth-oauthlib                   1.2.1
+google-generativeai                    0.7.2
+googleapis-common-protos               1.63.2
+greenlet                               3.1.1
+grpcio                                 1.67.1
+grpcio-status                          1.62.3
+grpcio-tools                           1.62.3
+h11                                    0.14.0
+h2                                     4.1.0
+hpack                                  4.0.0
+httpcore                               1.0.7
+httplib2                               0.22.0
+httptools                              0.6.4
+httpx                                  0.28.1
+httpx-sse                              0.4.0
+huggingface-hub                        0.27.0
+humanfriendly                          10.0
+hyperframe                             6.0.1
+idna                                   3.10
+importlib_metadata                     8.5.0
+importlib_resources                    6.5.2
+iniconfig                              2.0.0
+itsdangerous                           2.2.0
+Jinja2                                 3.1.3
+jiter                                  0.8.2
+jmespath                               1.0.1
+joblib                                 1.4.2
+jsonpatch                              1.33
+jsonpath-python                        1.0.6
+jsonpointer                            3.0.0
+kubernetes                             31.0.0
+langchain                              0.3.7
+langchain-chroma                       0.1.4
+langchain-community                    0.3.7
+langchain-core                         0.3.29
+langchain-text-splitters               0.3.4
+langdetect                             1.0.9
+langfuse                               2.44.0
+langsmith                              0.1.147
+lark                                   1.1.9
+ldap3                                  2.9.1
+lxml                                   5.3.0
+Mako                                   1.3.8
+Markdown                               3.7
+markdown-it-py                         3.0.0
+MarkupSafe                             2.1.5
+marshmallow                            3.23.3
+mdurl                                  0.1.2
+milvus-lite                            2.4.11
+mmh3                                   5.0.1
+monotonic                              1.6
+mpmath                                 1.3.0
+msoffcrypto-tool                       5.4.2
+multidict                              6.1.0
+multiprocess                           0.70.16
+mypy-extensions                        1.0.0
+nest-asyncio                           1.6.0
+networkx                               3.2.1
+ninja                                  1.11.1.3
+nltk                                   3.9.1
+numpy                                  1.26.3
+oauthlib                               3.2.2
+olefile                                0.47
+oletools                               0.60.2
+onnxruntime                            1.20.1
+openai                                 1.59.3
+opencv-python                          4.10.0.84
+opencv-python-headless                 4.10.0.84
+openpyxl                               3.1.5
+opensearch-py                          2.7.1
+opentelemetry-api                      1.29.0
+opentelemetry-exporter-otlp-proto-grpc 1.15.0
+opentelemetry-instrumentation          0.50b0
+opentelemetry-instrumentation-asgi     0.50b0
+opentelemetry-instrumentation-fastapi  0.50b0
+opentelemetry-proto                    1.15.0
+opentelemetry-sdk                      1.29.0
+opentelemetry-semantic-conventions     0.50b0
+opentelemetry-util-http                0.50b0
+orjson                                 3.10.13
+overrides                              7.7.0
+packaging                              23.2
+pandas                                 2.2.3
+passlib                                1.7.4
+pathspec                               0.12.1
+pcodedmp                               1.2.6
+peewee                                 3.17.8
+peewee-migrate                         1.12.2
+pgvector                               0.3.5
+pillow                                 10.2.0
+pip                                    24.0
+platformdirs                           4.3.6
+pluggy                                 1.5.0
+portalocker                            2.10.1
+posthog                                3.7.5
+primp                                  0.9.3
+propcache                              0.2.1
+proto-plus                             1.25.0
+protobuf                               4.25.5
+psutil                                 6.1.1
+psycopg2-binary                        2.9.9
+pyarrow                                18.1.0
+pyasn1                                 0.6.1
+pyasn1_modules                         0.4.1
+pyclipper                              1.3.0.post6
+pycparser                              2.22
+pydantic                               2.9.2
+pydantic_core                          2.23.4
+pydantic-settings                      2.7.1
+pydub                                  0.25.1
+Pygments                               2.18.0
+PyJWT                                  2.10.1
+pymdown-extensions                     10.11.2
+pymilvus                               2.5.0

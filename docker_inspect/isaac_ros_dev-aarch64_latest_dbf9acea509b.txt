@@ -1,0 +1,417 @@
+--- isaac_ros_dev-aarch64:latest (dbf9acea509b) ---
+{"io.buildah.version":"1.23.1","maintainer":"NVIDIA CORPORATION <cudatools@nvidia.com>","org.opencontainers.image.ref.name":"ubuntu","org.opencontainers.image.version":"22.04"}
+--- /etc/os-release ---
+PRETTY_NAME="Ubuntu 22.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.4 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+--- dpkg -l (head) ---
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                                        Version                                 Architecture Description
++++-===========================================================-=======================================-============-=================================================================================================================================================================================================================================================================================================================
+ii  acl                                                         2.3.1-1                                 arm64        access control list - utilities
+ii  adduser                                                     3.118ubuntu5                            all          add and remove users and groups
+ii  adwaita-icon-theme                                          41.0-1ubuntu1                           all          default icon theme of GNOME (small subset)
+ii  alsa-topology-conf                                          1.2.5.1-2                               all          ALSA topology configuration files
+ii  alsa-ucm-conf                                               1.2.6.3-1ubuntu1.12                     all          ALSA Use Case Manager configuration files
+ii  apt                                                         2.4.14                                  arm64        commandline package manager
+ii  apt-transport-https                                         2.4.14                                  all          transitional package for https support
+ii  apt-utils                                                   2.4.14                                  arm64        package management related utility programs
+ii  at-spi2-core                                                2.44.0-3                                arm64        Assistive Technology Service Provider Interface (dbus core)
+ii  autoconf                                                    2.71-2                                  all          automatic configure script builder
+ii  automake                                                    1:1.16.5-1.3                            all          Tool for generating GNU Standards-compliant Makefiles
+ii  autopoint                                                   0.21-4ubuntu4                           all          tool for setting up gettext infrastructure in a source package
+ii  autotools-dev                                               20220109.1                              all          Update infrastructure for config.{guess,sub} files
+ii  avahi-daemon                                                0.8-5ubuntu5.2                          arm64        Avahi mDNS/DNS-SD daemon
+ii  base-files                                                  12ubuntu4.6                             arm64        Debian base system miscellaneous files
+ii  base-passwd                                                 3.5.52build1                            arm64        Debian base system master password and group files
+ii  bash                                                        5.1-6ubuntu1.1                          arm64        GNU Bourne Again SHell
+ii  bash-completion                                             1:2.11-5ubuntu1                         all          programmable completion for the bash shell
+ii  bind9-host                                                  1:9.18.30-0ubuntu0.22.04.2              arm64        DNS Lookup Utility
+ii  bind9-libs:arm64                                            1:9.18.30-0ubuntu0.22.04.2              arm64        Shared Libraries used by BIND 9
+ii  binfmt-support                                              2.2.1-2                                 arm64        Support for extra binary formats
+ii  binutils                                                    2.38-4ubuntu2.6                         arm64        GNU assembler, linker and binary utilities
+ii  binutils-aarch64-linux-gnu                                  2.38-4ubuntu2.6                         arm64        GNU binary utilities, for aarch64-linux-gnu target
+ii  binutils-common:arm64                                       2.38-4ubuntu2.6                         arm64        Common files for the GNU assembler, linker and binary utilities
+ii  brz                                                         3.2.1+bzr7585-1build1                   all          easy to use distributed version control system
+ii  bsdextrautils                                               2.37.2-4ubuntu3.4                       arm64        extra utilities from 4.4BSD-Lite
+ii  bsdutils                                                    1:2.37.2-4ubuntu3.4                     arm64        basic utilities from 4.4BSD-Lite
+ii  build-essential                                             12.9ubuntu3                             arm64        Informational list of build-essential packages
+ii  bzip2                                                       1.0.8-5build1                           arm64        high-quality block-sorting file compressor - utilities
+ii  bzip2-doc                                                   1.0.8-5build1                           all          high-quality block-sorting file compressor - documentation
+ii  bzr                                                         2.7.0+bzr6622+brz                       all          transitional dummy package for brz
+ii  ca-certificates                                             20240203~22.04.1                        all          Common CA certificates
+ii  ca-certificates-java                                        20190909ubuntu1.2                       all          Common CA certificates (JKS keystore)
+ii  catch2                                                      2.13.8-1                                arm64        C++ Automated Test Cases in Headers
+ii  clang-format:arm64                                          1:14.0-55~exp2                          arm64        Tool to format C/C++/Obj-C code
+ii  clang-format-14                                             1:14.0.0-1ubuntu1.1                     arm64        Tool to format C/C++/Obj-C code
+ii  cmake                                                       3.22.1-1ubuntu1.22.04.2                 arm64        cross-platform, open-source make system
+ii  cmake-data                                                  3.22.1-1ubuntu1.22.04.2                 all          CMake data files (modules, templates and documentation)
+ii  comerr-dev:arm64                                            2.1-1.46.5-2ubuntu1.2                   arm64        common error description library - headers and static libraries
+ii  coreutils                                                   8.32-4.1ubuntu1.2                       arm64        GNU core utilities
+ii  cpp                                                         4:11.2.0-1ubuntu1                       arm64        GNU C preprocessor (cpp)
+ii  cpp-11                                                      11.4.0-1ubuntu1~22.04                   arm64        GNU C preprocessor
+ii  cppcheck                                                    2.7-1                                   arm64        tool for static C/C++ code analysis (CLI)
+ii  cuda-cccl-12-6                                              12.6.37-1                               arm64        CUDA CCCL
+ii  cuda-command-line-tools-12-6                                12.6.11-1                               arm64        CUDA command-line tools
+ii  cuda-compiler-12-6                                          12.6.11-1                               arm64        CUDA compiler
+ii  cuda-crt-12-6                                               12.6.68-1                               arm64        CUDA crt
+ii  cuda-cudart-12-6                                            12.6.77-1                               arm64        CUDA Runtime native Libraries
+ii  cuda-cudart-dev-12-6                                        12.6.68-1                               arm64        CUDA Runtime native dev links, headers
+ii  cuda-cuobjdump-12-6                                         12.6.68-1                               arm64        CUDA cuobjdump
+ii  cuda-cupti-12-6                                             12.6.68-1                               arm64        CUDA profiling tools runtime libs.
+ii  cuda-cupti-dev-12-6                                         12.6.68-1                               arm64        CUDA profiling tools interface.
+ii  cuda-cuxxfilt-12-6                                          12.6.68-1                               arm64        CUDA cuxxfilt
+ii  cuda-documentation-12-6                                     12.6.77-1                               arm64        CUDA documentation
+ii  cuda-driver-dev-12-6                                        12.6.68-1                               arm64        CUDA Driver native dev stub library
+ii  cuda-gdb-12-6                                               12.6.68-1                               arm64        CUDA-GDB
+ii  cuda-keyring                                                1.1-1                                   all          GPG keyring for the CUDA repository
+ii  cuda-libraries-12-6                                         12.6.11-1                               arm64        CUDA Libraries 12.6 meta-package
+ii  cuda-libraries-dev-12-6                                     12.6.11-1                               arm64        CUDA Libraries 12.6 development meta-package
+ii  cuda-minimal-build-12-6                                     12.6.11-1                               arm64        Minimal CUDA 12.6 toolkit build packages.
+ii  cuda-nsight-compute-12-6                                    12.6.11-1                               arm64        NVIDIA Nsight Compute
+ii  cuda-nvcc-12-6                                              12.6.68-1                               arm64        CUDA nvcc
+ii  cuda-nvdisasm-12-6                                          12.6.68-1                               arm64        CUDA disassembler
+ii  cuda-nvml-dev-12-6                                          12.6.77-1                               arm64        NVML native dev links, headers
+ii  cuda-nvprune-12-6                                           12.6.68-1                               arm64        CUDA nvprune
+ii  cuda-nvrtc-12-6                                             12.6.68-1                               arm64        NVRTC native runtime libraries
+ii  cuda-nvrtc-dev-12-6                                         12.6.68-1                               arm64        NVRTC native dev links, headers
+ii  cuda-nvtx-12-6                                              12.6.68-1                               arm64        NVIDIA Tools Extension
+ii  cuda-nvvm-12-6                                              12.6.68-1                               arm64        CUDA nvvm
+ii  cuda-profiler-api-12-6                                      12.6.68-1                               arm64        CUDA Profiler API
+ii  cuda-sanitizer-12-6                                         12.6.77-1                               arm64        CUDA Sanitizer
+ii  cuda-toolkit-12-6                                           12.6.3-1                                arm64        CUDA Toolkit 12.6 meta-package
+ii  cuda-toolkit-12-6-config-common                             12.6.68-1                               all          Common config package for CUDA Toolkit 12.6.
+ii  cuda-toolkit-12-config-common                               12.6.68-1                               all          Common config package for CUDA Toolkit 12.
+ii  cuda-toolkit-config-common                                  12.6.68-1                               all          Common config package for CUDA Toolkit.
+ii  cuda-tools-12-6                                             12.6.3-1                                arm64        CUDA Tools meta-package
+ii  cuda-visual-tools-12-6                                      12.6.3-1                                arm64        CUDA visual tools
+ii  curl                                                        7.81.0-1ubuntu1.20                      arm64        command line tool for transferring data with URL syntax
+ii  dash                                                        0.5.11+git20210903+057cd650a4ed-3build1 arm64        POSIX-compliant shell
+ii  dbus                                                        1.12.20-2ubuntu4.1                      arm64        simple interprocess messaging system (daemon and utilities)
+ii  dbus-user-session                                           1.12.20-2ubuntu4.1                      arm64        simple interprocess messaging system (systemd --user integration)
+ii  dconf-gsettings-backend:arm64                               0.40.0-3                                arm64        simple configuration storage system - GSettings back-end
+ii  dconf-service                                               0.40.0-3                                arm64        simple configuration storage system - D-Bus service
+ii  dctrl-tools                                                 2.24-3build2                            arm64        Command-line tools to process Debian package information
+ii  debconf                                                     1.5.79ubuntu1                           all          Debian configuration management system
+ii  debhelper                                                   13.6ubuntu1                             all          helper programs for debian/rules
+ii  debianutils                                                 5.5-1ubuntu2                            arm64        Miscellaneous utilities specific to Debian
+ii  debugedit                                                   1:5.0-4build1                           arm64        tools for handling build-ids and paths rewriting in DWARF data
+ii  default-jdk                                                 2:1.11-72build2                         arm64        Standard Java or Java compatible Development Kit
+ii  default-jdk-headless                                        2:1.11-72build2                         arm64        Standard Java or Java compatible Development Kit (headless)
+ii  default-jre                                                 2:1.11-72build2                         arm64        Standard Java or Java compatible Runtime
+ii  default-jre-headless                                        2:1.11-72build2                         arm64        Standard Java or Java compatible Runtime (headless)
+ii  default-libmysqlclient-dev:arm64                            1.0.8                                   arm64        MySQL database development files (metapackage)
+ii  devscripts                                                  2.22.1ubuntu1                           arm64        scripts to make the life of a Debian Package maintainer easier
+ii  dh-autoreconf                                               20                                      all          debhelper add-on to call autoreconf and clean up after the build
+ii  dh-elpa-helper                                              2.0.9ubuntu1                            all          helper package for emacs lisp extensions
+ii  dh-make                                                     2.202102                                all          tool that converts source archives into Debian package source
+ii  dh-strip-nondeterminism                                     1.13.0-1                                all          file non-deterministic information stripper — Debhelper add-on
+ii  diffstat                                                    1.64-1build2                            arm64        produces graph of changes introduced by a diff file
+ii  diffutils                                                   1:3.8-0ubuntu2                          arm64        File comparison utilities
+ii  dirmngr                                                     2.2.27-3ubuntu2.4                       arm64        GNU privacy guard - network certificate management service
+ii  distro-info-data                                            0.52ubuntu0.9                           all          information about the distributions' releases (data files)
+ii  dmsetup                                                     2:1.02.175-2.1ubuntu5                   arm64        Linux Kernel Device Mapper userspace library
+ii  docutils-common                                             0.17.1+dfsg-2                           all          text processing system for reStructuredText - common data
+ii  dpkg                                                        1.21.1ubuntu2.3                         arm64        Debian package management system
+ii  dpkg-dev                                                    1.21.1ubuntu2.3                         all          Debian package development tools
+ii  dput                                                        1.1.0ubuntu2.1                          all          Debian package upload tool
+ii  dwz                                                         0.14-1build2                            arm64        DWARF compression tool
+ii  e2fsprogs                                                   1.46.5-2ubuntu1.2                       arm64        ext2/ext3/ext4 file system utilities
+ii  ed                                                          1.18-1                                  arm64        classic UNIX line editor
+ii  emacsen-common                                              3.0.4                                   all          Common facilities for all emacsen
+ii  fakeroot                                                    1.28-1ubuntu1                           arm64        tool for simulating superuser privileges
+ii  file                                                        1:5.41-3ubuntu0.1                       arm64        Recognize the type of data in a file using "magic" numbers
+ii  findutils                                                   4.8.0-1ubuntu3                          arm64        utilities for finding files--find, xargs
+ii  fontconfig                                                  2.13.1-4.2ubuntu5                       arm64        generic font configuration library - support binaries
+ii  fontconfig-config                                           2.13.1-4.2ubuntu5                       all          generic font configuration library - configuration
+ii  fonts-dejavu-core                                           2.37-2build1                            all          Vera font family derivate with additional characters
+ii  fonts-dejavu-extra                                          2.37-2build1                            all          Vera font family derivate with additional characters (extra variants)
+ii  fonts-droid-fallback                                        1:6.0.1r16-1.1build1                    all          handheld device font with extensive style and language support (fallback)
+ii  fonts-liberation                                            1:1.07.4-11                             all          Fonts with the same metrics as Times, Arial and Courier
+ii  fonts-noto-mono                                             20201225-1build1                        all          "No Tofu" monospaced font family with large Unicode coverage
+ii  fonts-urw-base35                                            20200910-1                              all          font set metric-compatible with the 35 PostScript Level 2 Base Fonts
+ii  freeglut3:arm64                                             2.8.1-6                                 arm64        OpenGL Utility Toolkit
+ii  freeglut3-dev:arm64                                         2.8.1-6                                 arm64        OpenGL Utility Toolkit development files
+ii  g++                                                         4:11.2.0-1ubuntu1                       arm64        GNU C++ compiler
+ii  g++-11                                                      11.4.0-1ubuntu1~22.04                   arm64        GNU C++ compiler
+ii  gcc                                                         4:11.2.0-1ubuntu1                       arm64        GNU C compiler
+ii  gcc-11                                                      11.4.0-1ubuntu1~22.04                   arm64        GNU C compiler
+ii  gcc-11-base:arm64                                           11.4.0-1ubuntu1~22.04                   arm64        GCC, the GNU Compiler Collection (base package)
+ii  gcc-12-base:arm64                                           12.3.0-1ubuntu1~22.04                   arm64        GCC, the GNU Compiler Collection (base package)
+ii  gdal-data                                                   3.4.1+dfsg-1build4                      all          Geospatial Data Abstraction Library - Data files
+ii  gds-tools-12-6                                              1.11.1.6-1                              arm64        Tools for GPU Direct Storage
+ii  geoclue-2.0                                                 2.5.7-3ubuntu3                          arm64        geoinformation service
+ii  gettext                                                     0.21-4ubuntu4                           arm64        GNU Internationalization utilities
+ii  gettext-base                                                0.21-4ubuntu4                           arm64        GNU Internationalization utilities for the base system
+ii  gfortran                                                    4:11.2.0-1ubuntu1                       arm64        GNU Fortran 95 compiler
+ii  gfortran-11                                                 11.4.0-1ubuntu1~22.04                   arm64        GNU Fortran compiler
+ii  ghostscript                                                 9.55.0~dfsg1-0ubuntu5.12                arm64        interpreter for the PostScript language and for PDF
+ii  gir1.2-glib-2.0:arm64                                       1.72.0-1                                arm64        Introspection data for GLib, GObject, Gio and GModule
+ii  gir1.2-ibus-1.0:arm64                                       1.5.26-4                                arm64        Intelligent Input Bus - introspection data
+ii  gir1.2-packagekitglib-1.0                                   1.2.5-2ubuntu3                          arm64        GObject introspection data for the PackageKit GLib library
+ii  git                                                         1:2.34.1-1ubuntu1.14                    arm64        fast, scalable, distributed revision control system
+ii  git-lfs                                                     3.0.2-1ubuntu0.3                        arm64        Git Large File Support
+ii  git-man                                                     1:2.34.1-1ubuntu1.14                    all          fast, scalable, distributed revision control system (manual pages)
+ii  glib-networking:arm64                                       2.72.0-1                                arm64        network-related giomodules for GLib
+ii  glib-networking-common                                      2.72.0-1                                all          network-related giomodules for GLib - data files
+ii  glib-networking-services                                    2.72.0-1                                arm64        network-related giomodules for GLib - D-Bus services
+ii  gnupg                                                       2.2.27-3ubuntu2.4                       all          GNU privacy guard - a free PGP replacement
+ii  gnupg-l10n                                                  2.2.27-3ubuntu2.4                       all          GNU privacy guard - localization files
+ii  gnupg-utils                                                 2.2.27-3ubuntu2.4                       arm64        GNU privacy guard - utility programs
+ii  gnupg2                                                      2.2.27-3ubuntu2.4                       all          GNU privacy guard - a free PGP replacement (dummy transitional package)
+ii  google-mock:arm64                                           1.11.0-3                                arm64        Google's framework for writing and using C++ mock classes
+ii  googletest                                                  1.11.0-3                                all          Google's C++ test framework sources
+ii  gosu                                                        1.14-1ubuntu0.1                         arm64        Simple Go-based setuid+setgid+setgroups+exec
+ii  gpg                                                         2.2.27-3ubuntu2.4                       arm64        GNU Privacy Guard -- minimalist public key operations
+ii  gpg-agent                                                   2.2.27-3ubuntu2.4                       arm64        GNU privacy guard - cryptographic agent
+ii  gpg-wks-client                                              2.2.27-3ubuntu2.4                       arm64        GNU privacy guard - Web Key Service client
+ii  gpg-wks-server                                              2.2.27-3ubuntu2.4                       arm64        GNU privacy guard - Web Key Service server
+ii  gpgconf                                                     2.2.27-3ubuntu2.4                       arm64        GNU privacy guard - core configuration utilities
+ii  gpgsm                                                       2.2.27-3ubuntu2.4                       arm64        GNU privacy guard - S/MIME version
+ii  gpgv                                                        2.2.27-3ubuntu2.4                       arm64        GNU privacy guard - signature verification tool
+ii  graphicsmagick-libmagick-dev-compat                         1.4+really1.3.38-1ubuntu0.1             all          image processing libraries providing ImageMagick interface
+ii  graphviz                                                    2.42.2-6ubuntu0.1                       arm64        rich set of graph drawing tools
+ii  grep                                                        3.7-1build1                             arm64        GNU grep, egrep and fgrep
+ii  groff-base                                                  1.22.4-8build1                          arm64        GNU troff text-formatting system (base system components)
+ii  gsettings-desktop-schemas                                   42.0-1ubuntu1                           all          GSettings desktop-wide schemas
+ii  gsfonts                                                     1:8.11+urwcyr1.0.7~pre44-4.5            all          Fonts for the Ghostscript interpreter(s)
+ii  gstreamer1.0-plugins-base:arm64                             1.20.1-1ubuntu0.4                       arm64        GStreamer plugins from the "base" set
+ii  gtk-update-icon-cache                                       3.24.33-1ubuntu2.2                      arm64        icon theme caching utility
+ii  gzip                                                        1.10-4ubuntu4.1                         arm64        GNU compression utilities
+ii  hdf5-helpers                                                1.10.7+repack-4ubuntu2                  arm64        HDF5 - Helper tools
+ii  hicolor-icon-theme                                          0.17-2                                  all          default fallback theme for FreeDesktop.org icon themes
+ii  hostname                                                    3.23ubuntu2                             arm64        utility to set/show the host name or domain name
+ii  humanity-icon-theme                                         0.6.16                                  all          Humanity Icon theme
+ii  ibverbs-providers:arm64                                     39.0-1                                  arm64        User space provider drivers for libibverbs
+ii  icu-devtools                                                70.1-2                                  arm64        Development utilities for International Components for Unicode
+ii  iio-sensor-proxy                                            3.3-0ubuntu6                            arm64        IIO sensors to D-Bus proxy
+ii  init-system-helpers                                         1.62                                    all          helper tools for all init systems
+ii  intltool-debian                                             0.35.0+20060710.5                       all          Help i18n of RFC822 compliant config files
+ii  iputils-ping                                                3:20211215-1                            arm64        Tools to test the reachability of network hosts
+ii  iso-codes                                                   4.9.0-1                                 all          ISO language, territory, currency, script codes and their translations
+ii  java-common                                                 0.72build2                              all          Base package for Java runtimes
+ii  javascript-common                                           11+nmu1                                 all          Base support for JavaScript library packages
+ii  jq                                                          1.6-2.1ubuntu3                          arm64        lightweight and flexible command-line JSON processor
+ii  kmod                                                        29-1ubuntu1                             arm64        tools for managing Linux kernel modules
+ii  krb5-multidev:arm64                                         1.19.2-2ubuntu0.7                       arm64        development files for MIT Kerberos without Heimdal conflict
+ii  lcov                                                        1.15-1                                  all          Summarise Code coverage information from GCOV
+ii  less                                                        590-1ubuntu0.22.04.3                    arm64        pager program similar to more
+ii  libaacs0:arm64                                              0.11.1-1                                arm64        free-and-libre implementation of AACS
+ii  libacl1:arm64                                               2.3.1-1                                 arm64        access control list - shared library
+ii  libacl1-dev:arm64                                           2.3.1-1                                 arm64        access control list - static libraries and headers
+ii  libaec-dev:arm64                                            1.0.6-1                                 arm64        Development files for the Adaptive Entropy Coding library
+ii  libaec0:arm64                                               1.0.6-1                                 arm64        Adaptive Entropy Coding library
+ii  libaliased-perl                                             0.34-1.1                                all          Perl module to provide aliases of class names
+ii  libamd2:arm64                                               1:5.10.1+dfsg-4build1                   arm64        approximate minimum degree ordering library for sparse matrices
+--- pip list (head) ---
+Package                                  Version
+---------------------------------------- -------------------------
+anyio                                    4.9.0
+argcomplete                              3.6.2
+attrs                                    25.3.0
+Automat                                  20.2.0
+autopep8                                 2.3.2
+Babel                                    2.8.0
+bcrypt                                   3.2.0
+beautifulsoup4                           4.10.0
+beniget                                  0.4.1
+blessings                                1.7
+blinker                                  1.4
+bloom                                    0.13.0
+boto3                                    1.39.4
+botocore                                 1.39.4
+breezy                                   3.2.1
+catkin-pkg                               1.0.0
+catkin-pkg-modules                       1.0.0
+certifi                                  2025.7.9
+chardet                                  4.0.0
+charset-normalizer                       3.4.2
+click                                    8.0.3
+colcon-argcomplete                       0.3.3
+colcon-bash                              0.5.0
+colcon-cd                                0.2.1
+colcon-cmake                             0.2.29
+colcon-common-extensions                 0.3.0
+colcon-core                              0.19.0
+colcon-defaults                          0.2.9
+colcon-devtools                          0.3.0
+colcon-installed-package-information     0.2.1
+colcon-library-path                      0.2.1
+colcon-metadata                          0.2.5
+colcon-notification                      0.3.0
+colcon-output                            0.2.13
+colcon-override-check                    0.0.1
+colcon-package-information               0.4.0
+colcon-package-selection                 0.2.10
+colcon-parallel-executor                 0.3.0
+colcon-pkg-config                        0.1.0
+colcon-powershell                        0.4.0
+colcon-python-setup-py                   0.2.9
+colcon-recursive-crawl                   0.2.3
+colcon-ros                               0.5.0
+colcon-test-result                       0.3.8
+colcon-zsh                               0.5.0
+colorama                                 0.4.4
+colorlog                                 6.9.0
+configobj                                5.0.6
+constantly                               15.1.0
+contourpy                                1.3.2
+cov-core                                 1.15.0
+coverage                                 6.2
+cryptography                             3.4.8
+cuda-bindings                            12.9.0
+cuda-python                              12.9.0
+cupy-cuda12x                             13.4.1
+cycler                                   0.12.1
+Cython                                   3.1.2
+dbus-python                              1.2.18
+decorator                                4.4.2
+Deprecated                               1.2.18
+devscripts                               2.22.1ubuntu1
+distlib                                  0.3.9
+distro                                   1.7.0
+distro-info                              1.1+ubuntu0.2
+dnspython                                2.7.0
+docutils                                 0.17.1
+dulwich                                  0.20.31
+empy                                     3.3.4
+exceptiongroup                           1.3.0
+fastbencode                              0.0.5
+fastimport                               0.9.14
+fastrlock                                0.8.3
+filelock                                 3.18.0
+flake8                                   7.3.0
+flake8-blind-except                      0.2.1
+flake8-builtins                          2.5.0
+flake8-class-newline                     1.6.0
+flake8-comprehensions                    3.16.0
+flake8-deprecated                        2.2.1
+flake8-docstrings                        1.7.0
+flake8_import_order                      0.19.2
+flake8-quotes                            3.4.0
+fonttools                                4.58.5
+fsspec                                   2025.5.1
+gast                                     0.5.2
+googleapis-common-protos                 1.70.0
+gpg                                      1.16.0
+gpustat                                  0.6.0
+grpcio                                   1.73.1
+h11                                      0.16.0
+hdbscan                                  0.8.40
+html5lib                                 1.1
+httpcore                                 1.0.9
+httplib2                                 0.20.2
+httpx                                    0.28.1
+hyperlink                                21.0.0
+idna                                     3.10
+imageio                                  2.37.0
+importlib_metadata                       8.5.0
+importlib_resources                      6.5.2
+incremental                              21.3.0
+iniconfig                                1.1.1
+jeepney                                  0.7.1
+jetson-stats                             4.3.2
+Jinja2                                   3.1.6
+jmespath                                 1.0.1
+joblib                                   1.5.1
+jsonschema                               4.24.0
+jsonschema-specifications                2025.4.1
+keyring                                  23.5.0
+kiwisolver                               1.4.8
+lark                                     1.1.1
+launchpadlib                             1.10.16
+lazr.restfulclient                       0.14.4
+lazr.uri                                 1.0.6
+lazy_loader                              0.4
+lxml                                     6.0.0
+lz4                                      4.4.4
+manifold3d                               3.1.1
+mapbox_earcut                            1.0.3
+MarkupSafe                               3.0.2
+matplotlib                               3.10.3
+mccabe                                   0.7.0
+mercurial                                6.1.1
+more-itertools                           8.10.0
+mpi4py                                   3.1.3
+mpmath                                   1.3.0
+netifaces                                0.11.0
+networkx                                 3.4.2
+ninja                                    1.11.1.4
+nose2                                    0.9.2
+notify2                                  0.3
+ntplib                                   0.3.3
+numpy                                    1.26.4
+numpy-quaternion                         2024.0.10
+nvidia-ml-py3                            7.352.0
+oauthlib                                 3.2.0
+olefile                                  0.46
+onnx                                     1.18.0
+opentelemetry-api                        1.28.1
+opentelemetry-exporter-otlp              1.28.1
+opentelemetry-exporter-otlp-proto-common 1.28.1
+opentelemetry-exporter-otlp-proto-grpc   1.28.1
+opentelemetry-exporter-otlp-proto-http   1.28.1
+opentelemetry-proto                      1.28.1
+opentelemetry-sdk                        1.28.1
+opentelemetry-semantic-conventions       0.49b1
+packaging                                21.3
+paho-mqtt                                1.6.1
+pandas                                   2.3.1
+patiencediff                             0.2.1
+pillow                                   11.3.0
+pip                                      25.1.1
+platformdirs                             4.3.8
+pluggy                                   0.13.0
+ply                                      3.11
+protobuf                                 5.29.5
+psutil                                   7.0.0
+py                                       1.10.0
+pyasn1                                   0.4.8
+pyasn1-modules                           0.2.1
+pybind11                                 2.9.1
+pycodestyle                              2.14.0
+pycollada                                0.9.2
+pydocstyle                               6.3.0
+pydot                                    1.4.2
+pyflakes                                 3.4.0
+PyGithub                                 1.55
+Pygments                                 2.11.2
+PyGObject                                3.42.1
+pygraphviz                               1.7
+PyHamcrest                               2.0.2
+PyJWT                                    2.3.0
+pymongo                                  4.13.2
+PyNaCl                                   1.5.0
+pyOpenSSL                                21.0.0
+pyparsing                                2.4.7
+PyQt5                                    5.15.6
+PyQt5-sip                                12.9.1
+pytest                                   6.2.5
+pytest-cov                               3.0.0
+pytest-repeat                            0.9.1
+pytest-rerunfailures                     10.2
+python-apt                               2.4.0+ubuntu4
+python-dateutil                          2.9.0.post0
+python-debian                            0.1.43+ubuntu1.1
+python-gitlab                            2.10.1
+python-magic                             0.4.24
+pythran                                  0.10.0
+pytz                                     2025.2
+pyxdg                                    0.27
+PyYAML                                   6.0.2
+pyzmq                                    22.3.0
+referencing                              0.36.2
+requests                                 2.32.4
+requests-toolbelt                        0.9.1
+roman                                    3.3

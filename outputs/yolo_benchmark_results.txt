@@ -1,0 +1,9 @@
+YOLO camera verification started
+Loading model yolov8n.pt
+Trying strategy: cuda
+Starting capture-based timed runs (30 frames) on cuda...
+Processed 10/30 frames
+Processed 20/30 frames
+Processed 30/30 frames
+Strategy cuda — Average time: 0.1639s, FPS: 6.10 (over 30 frames)
+YOLO camera verification finished

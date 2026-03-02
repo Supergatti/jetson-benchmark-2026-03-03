@@ -1,0 +1,4 @@
+/home/jetson/Desktop/MX219/04_Isaac_ROS_VSLAM
+/home/jetson/Desktop/MX219/03_Isaac_ROS_VSLAM
+/home/jetson/workspaces/isaac_ros-dev
+/home/jetson/workspaces/isaac_ros-dev/isaac_ros_assets
