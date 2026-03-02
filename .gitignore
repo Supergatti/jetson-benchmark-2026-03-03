@@ -1,0 +1,19 @@
+# Ignore model weights and engine files
+*.pt
+*.pth
+*.onnx
+*.engine
+*.trt
+*.gguf
+*.safetensors
+
+# Ignore caches and runtime directories
+__pycache__/
+*.pyc
+runs/
+outputs/sample.jpg
+
+# Ignore system files
+.DS_Store
+venv/
+env/
