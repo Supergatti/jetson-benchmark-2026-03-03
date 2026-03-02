@@ -45,3 +45,15 @@ cap = cv2.VideoCapture(pipeline, cv2.CAP_GSTREAMER)
 - 若需最高吞吐和低延迟（用于实时推理），优先使用 `nvarguscamerasrc` / `nvcamerasrc` + GStreamer，然后在用户空间直接传入 TensorRT/ONNX 推理输入。
 - 若碰到颜色格式或字节对齐问题，请在 `nvvidconv`/`videoconvert` 阶段明确指定格式为 `BGR` 或 `RGB`。
 - 已保存的详细探测输出：`outputs/camera_v4l2_details.txt`、`outputs/camera_formats.txt`、`outputs/camera_udev.txt`（仓库内）。
+
+安装/摆放与坐标系说明
+- 摄像头安装姿态（由用户提供）:
+  - Z 轴: 指向正前方（摄像头镜头指向的方向）。
+  - Y 轴: 竖直向下。
+  - X 轴: 水平向右。
+- 注意事项: 按“常规”摆放编写的程序有可能出现上下颠倒或左右镜像的问题，且左右摄像头编号可能与物理左右相反（例如 `/dev/video0` 可能是右侧摄像头）。在涉及多摄像头拼接或空间定位的应用中，请在初始化阶段验证每个设备的朝向和左右顺序。
+
+如何验证（建议）
+- 在启动推理/标定前，拍一张标有方向的测试图（例如放置箭头/棋盘格），分别从 `/dev/video0` 与 `/dev/video1` 采集并确认左右与上下方向是否与期望一致。
+- 若发现左右/上下颠倒，可在预处理阶段对帧执行 `cv2.flip()` 或交换摄像头索引来修正。
+
