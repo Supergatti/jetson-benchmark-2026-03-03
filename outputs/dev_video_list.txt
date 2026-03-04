@@ -1,0 +1,3 @@
+--- /dev/video* ---
+crw-rw----+ 1 root video 81, 0 Jan  1  1970 /dev/video0
+crw-rw----+ 1 root video 81, 4 Jan  1  1970 /dev/video1

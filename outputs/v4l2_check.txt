@@ -1,0 +1,3 @@
+--- v4l2-ctl availability ---
+/usr/bin/v4l2-ctl
+v4l2-ctl found; collecting details

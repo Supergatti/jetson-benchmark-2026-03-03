@@ -1,0 +1,30 @@
+=== FORMATS /dev/video0 ===
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture
+
+	[0]: 'RG10' (10-bit Bayer RGRG/GBGB)
+		Size: Discrete 3280x2464
+			Interval: Discrete 0.048s (21.000 fps)
+		Size: Discrete 3280x1848
+			Interval: Discrete 0.036s (28.000 fps)
+		Size: Discrete 1920x1080
+			Interval: Discrete 0.033s (30.000 fps)
+		Size: Discrete 1640x1232
+			Interval: Discrete 0.033s (30.000 fps)
+		Size: Discrete 1280x720
+			Interval: Discrete 0.017s (60.000 fps)
+=== FORMATS /dev/video1 ===
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture
+
+	[0]: 'RG10' (10-bit Bayer RGRG/GBGB)
+		Size: Discrete 3280x2464
+			Interval: Discrete 0.048s (21.000 fps)
+		Size: Discrete 3280x1848
+			Interval: Discrete 0.036s (28.000 fps)
+		Size: Discrete 1920x1080
+			Interval: Discrete 0.033s (30.000 fps)
+		Size: Discrete 1640x1232
+			Interval: Discrete 0.033s (30.000 fps)
+		Size: Discrete 1280x720
+			Interval: Discrete 0.017s (60.000 fps)

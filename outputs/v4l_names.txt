@@ -1,0 +1,7 @@
+--- /sys/class/video4linux names ---
+/sys/class/video4linux/v4l-subdev0/name: 13e00000.host1x:nvcsi@15a00000-
+/sys/class/video4linux/v4l-subdev1/name: 13e00000.host1x:nvcsi@15a00000-
+/sys/class/video4linux/v4l-subdev2/name: imx219 9-0010
+/sys/class/video4linux/v4l-subdev3/name: imx219 10-0010
+/sys/class/video4linux/video0/name: vi-output, imx219 9-0010
+/sys/class/video4linux/video1/name: vi-output, imx219 10-0010
